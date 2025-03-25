@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="skills.html">Compétences</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section des projets -->
+    <section id="projets">
+        <h1>Mes Projets</h1>
+
+        <div class="projet">
+            <img src="images/logo.jpeg" alt="Projet Logo 1">
+            <h3>Création d'un Logo</h3>
+            <p>Design d'un logo moderne pour une entreprise de développement personnel.</p>
+        </div>
+
+        <div class="projet">
+            <img src="images/commerce.jpg" alt="Maquette Web Projet 2">
+            <h3>Maquette Web</h3>
+            <p>Design d'une maquette web responsive pour un site e-commerce.</p>
+        </div>
+
+        <div class="projet">
+            <img src="images/appli.png" alt="Design Application 3">
+            <h3>Application Mobile</h3>
+            <p>Conception de l'interface utilisateur pour une application de santé mobile.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Portfolio de Designer | Tous droits réservés</p>
+    </footer>
+
+
+    <script>
+        // Sélectionner toutes les images des projets
+        const imagesProjets = document.querySelectorAll('.projet img');
+    
+        // Ajouter un effet de survol pour chaque image
+        imagesProjets.forEach(image => {
+            image.addEventListener('mouseenter', () => {
+                image.style.transform = 'scale(1.1)';  // Agrandir l'image
+                image.style.transition = 'transform 0.3s ease';  // Transition douce
+            });
+    
+            image.addEventListener('mouseleave', () => {
+                image.style.transform = 'scale(1)';  // Revenir à la taille initiale
+            });
+        });
+    </script>
+    
+</body>
+</html>

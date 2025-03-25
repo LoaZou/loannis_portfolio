@@ -1,0 +1,300 @@
+ /* Police générale */
+ body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* En-tête */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section accueil */
+#accueil {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+#accueil h1 {
+    font-size: 2.5em;
+}
+
+#accueil p {
+    font-size: 1.2em;
+}
+
+#accueil img { 
+    width: 70%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 40px; /* Ajoute de l'espace en bas de l'image */
+    border: 5px solid #6B8E23; /* Bordure vert olive */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+/* Page À propos */
+#about {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Page Compétences */
+#competences {
+    padding: 50px 10%;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#competences h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.compétence {
+    display: inline-block;
+    width: 22%;
+    margin: 0 1.5%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.compétence h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.compétence-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.compétence p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Page Projets */
+#projets {
+    padding: 50px 10%;
+    background-color: #fff;
+    text-align: center;
+}
+
+#projets h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.projet {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.projet img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.projet h3 {
+    font-size: 1.6em;
+    margin-top: 10px;
+}
+
+.projet p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.projet a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+
+/* Tablette et appareils de taille moyenne */
+@media (max-width: 768px) {
+    /* Accueil */
+    #accueil h1 {
+        font-size: 2em;
+    }
+    #accueil p {
+        font-size: 1em;
+    }
+
+    /* Compétences */
+    #competences {
+        padding: 50px 5%;
+    }
+
+    .compétence {
+        width: 45%; /* Deux éléments par ligne */
+        margin: 0 2.5%;
+    }
+
+    /* Projets */
+    #projets {
+        padding: 50px 5%;
+    }
+
+    .projet {
+        width: 45%; /* Deux éléments par ligne */
+        margin: 0 2.5%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    /* Accueil */
+    #accueil h1 {
+        font-size: 1.5em;
+    }
+    #accueil p {
+        font-size: 0.9em;
+    }
+
+    /* Compétences */
+    #competences {
+        padding: 30px 5%;
+    }
+
+    .compétence {
+        width: 90%; /* Un seul élément par ligne */
+        margin: 0 5%;
+    }
+
+    /* Projets */
+    #projets {
+        padding: 30px 5%;
+    }
+
+    .projet {
+        width: 90%; /* Un seul élément par ligne */
+        margin: 0 5%;
+    }
+
+    /* En-tête */
+    nav ul li {
+        display: block; /* Les liens sont empilés verticalement */
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Section Contact */
+#contact {
+    padding: 50px 10%;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+form {
+    margin-bottom: 30px;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+#map {
+    margin-top: 30px;
+}
+
+/* Optionnel : pour l'email et la carte */
+#contact p a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#contact p a:hover {
+    text-decoration: underline;
+}
